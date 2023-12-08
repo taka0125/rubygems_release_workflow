@@ -38,6 +38,6 @@ jobs:
       - name: Setup git config # bundle exec rake release でgit tagが打たれていない場合、タグを打ってpushしてくれるため用意している
         run: |
           git config --global user.email "${{ inputs.user-email }}"
-          git config --global user.name "${{ inputs.user-namel }}"
+          git config --global user.name "${{ inputs.user-name }}"
       - name: Release gem
         run: bundle exec rake release
